@@ -3,5 +3,5 @@
     "name":"Majlisunnoor by SKSSF Blathur Unit",
     "icons":[{"src":"/assets/img/majlisunnoor_icon_192x192.png","type":"image/png","sizes":"192x192"},
         {"src":"/assets/img/majlisunnoor%20icon.png","type":"image/png","sizes":"512x512"}],
-        "start_url":"/index.html","background_color":"rgb(155,255,120)","theme_color":"rgb(80,59,96)",
+        "start_url":"https://skssf.github.io/","background_color":"rgb(155,255,120)","theme_color":"rgb(80,59,96)",
         "display":"fullscreen","orientation":"portrait"}
