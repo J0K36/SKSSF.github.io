@@ -108,21 +108,20 @@ header nav ul
 /* content */
 .wrapper
 {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    margin: 5px 0;
+    margin: 2px 0;
 }
 
 
 main
 {
-    display: block;
-    width: 100%;
-    height: 30vh;
+    flex-basis: 60%;
     background: rgb(72,103,163);
     background: linear-gradient(162deg, rgba(5,65,150,1) 0%, rgba(141,141,170,1) 43%, rgba(201,246,255,1) 100%);
-    border-radius: 10px;
-    margin: 5px 0;
+    border-radius: 8px;
+    margin: 1px auto;
     text-align: center;
     color: white;
 }
@@ -152,13 +151,11 @@ main p
 
 .sidebar
 {
-    display: block;
-    width: 98%;
-    height: 20vh;
-    background: rgb(11,11,11);
-    background: linear-gradient(135deg, rgba(5,65,150,1) 100%, rgb(119, 216, 255) 50%);
+    flex-basis: 39%;
+    background: linear-gradient(135deg, rgb(120, 171, 241) 10%, rgb(119, 216, 255) 50%);
     text-align: center;
-    margin: 5px auto;
+    margin: 1px auto;
+    border-radius: 8px;
 }
 .sidebar h2
 {
@@ -174,26 +171,32 @@ main p
     color: white;
 }
 
-
-
-
-.content
+.child_contents
 {
-    display: block;
     width: 100%;
-    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2px auto;
+}
+.content1, .content2
+{
+    flex-basis: 48%;
     background: rgb(101,111,214);
     background: linear-gradient(180deg, rgba(101,111,214,1) 0%, rgba(44,198,92,1) 100%, rgba(79,190,164,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);
-    margin: 5px 0;
+    margin: 10px auto;
+    border-radius: 6px;
     text-align: center;
     font-family: 'Montserrat', sans-serif ;
 }
-.content img
+.content1 img, .content2 img
+
 {
     width: 120px;
     margin: 10px 0 0 0;
 }
-.content a
+.content1 a, .content2 a
+
 {
     text-decoration: none;   
 }
@@ -206,8 +209,36 @@ main p
 footer
 {
     display: block;
-    height: 100px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
     background-color: rgba(75, 75, 120, 0.7);
     text-align: center;
     color: white;
+}
+
+
+
+
+
+@media screen and (max-width: 640px) {
+    .wrapper {   
+      flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .wrapper {   
+        flex-direction: column;
+    }
+    .child_contents {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .content1, .content2 {
+        flex-basis: 96%;
+        margin: 1px;
+    }
 }

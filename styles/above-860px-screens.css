@@ -6,8 +6,9 @@ font-family: 'Rubik Mono One', sans-serif;
 */
 
 
-*
+body
 {
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -20,7 +21,6 @@ header
     background: linear-gradient(135deg, rgba(56,244,156,.95) 0%, rgba(140,124,184,0.95) 48%, rgba(54,209,147,.95) 100%, rgba(79,190,164,1.8) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);
     width: 100%;
     height: 100px;
-    grid-area: header;
 }
 header nav
 {
@@ -91,11 +91,11 @@ header nav ul li a:hover
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 300px 150px 150px;
+    grid-template-rows: 300px 200px 200px;
     grid-template-areas: 
         'main main main sidebar'
-        '. . . sidebar'
-        '. . . .';
+        'contents contents contents sidebar'
+        'contents contents contents sidebar';
     grid-gap: 8px;
     margin: 6px 5px;
 }
@@ -158,10 +158,13 @@ main p
     font-size: 70%;
 }
 
-
+.child_contents
+{
+    grid-area: contents;
+}
 
 /* content boxes */
-.content
+.content1
 {
     background: rgb(101,111,214);
     background: linear-gradient(180deg, rgba(101,111,214,1) 0%, rgba(44,198,92,1) 100%, rgba(79,190,164,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);
@@ -170,19 +173,33 @@ main p
     text-align: center;
     font-family: 'Montserrat', sans-serif ;
 }
-.content img
+.content1 img
 {
     width: 120px;
     margin: 30px 0 0 0;
 }
-.content a
+.content1 a
 {
     text-decoration: none;   
 }
-/* detailed boxes */
-.empty_content
+
+.content2
 {
-    display: none;
+    background: rgb(101,111,214);
+    background: linear-gradient(180deg, rgba(101,111,214,1) 0%, rgba(44,198,92,1) 100%, rgba(79,190,164,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);
+    border-radius: 0px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif ;
+}
+.content2 img
+{
+    width: 120px;
+    margin: 30px 0 0 0;
+}
+.content2 a
+{
+    text-decoration: none;   
 }
 
 
@@ -190,15 +207,13 @@ main p
 /*  footer */
 footer
 {
+    display: block;
+    position: relative;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100px;
     background-color: rgba(75, 75, 120, 0.7);
-    grid-area: footer;
     padding: 10px;
-    text-align: center;
-    font-family: 'Lemonada', cursive;
-    text-decoration: none;
-    color: white;
 }
 footer .copyright
 {
