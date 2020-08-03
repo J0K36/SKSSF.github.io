@@ -13,22 +13,6 @@ font-family: 'Rubik Mono One', sans-serif;
 }
 
 
-body
-{
-    display: grid;
-    grid-template-columns: .75fr 1fr 1fr 1fr;
-   /* grid-template-rows: 170px 65vh 15vh 15vh 20vh 15vh; */
-    grid-template-rows: 100px 60% 15% 15% 20% 150px;
-    grid-template-areas: 
-        'header header header header'
-        'sidebar main main main'
-        'sidebar content1 content2 content3'
-        '. content1 content2 content3'
-        '. content1 content2 content3'
-        'footer footer footer footer';
-    grid-gap: 8px;
-}
-
 /*  header */
 header
 {
@@ -92,6 +76,63 @@ header nav ul li a:hover
     color: rgba(220, 220, 50, 1);
     transition: 300ms;
 }
+.expand
+{
+    display: none;
+    height: 0;
+}
+#expand_icon
+{
+    display: none;
+}
+
+/* wrapper */
+.wrapper
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 150px 150px;
+    grid-template-areas: 
+        'main main main sidebar'
+        '. . . sidebar'
+        '. . . .';
+    grid-gap: 8px;
+    margin: 6px 5px;
+}
+
+
+/*  main */
+main
+{
+    background: rgb(72,103,163);
+    background: linear-gradient(162deg, rgba(5,65,150,1) 0%, rgba(141,141,170,1) 43%, rgba(201,246,255,1) 100%);
+    grid-area: main;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+
+}
+main h3
+{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin: 16px 0 0 0;
+}
+main h1
+{
+    text-transform: uppercase;
+    font-family: 'Rubik Mono One', sans-serif;
+    text-decoration: none;
+    line-height: 40px;
+    margin: 0 0 16px 0;
+}
+main p
+{
+    font-family: 'Lemonada', cursive;
+    font-size: 80%;
+}
+
 
 
 /* side bar  */
@@ -101,7 +142,7 @@ header nav ul li a:hover
     background: linear-gradient(45deg, rgba(11,11,11,0) 0%, rgba(0,0,0,0) 43%, rgba(5,65,150,1) 100%);
     grid-area: sidebar;
     padding: 10px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     text-align: right;
 }
 .sidebar h2
@@ -117,89 +158,40 @@ header nav ul li a:hover
     font-size: 70%;
 }
 
-/*  main */
-main
-{
-    background: rgb(72,103,163);
-    background: linear-gradient(162deg, rgba(5,65,150,1) 0%, rgba(141,141,170,1) 43%, rgba(201,246,255,1) 100%);
-    grid-area: main;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    color: white;
 
-}
-main h1
-{
-    text-transform: uppercase;
-    font-family: 'Rubik Mono One', sans-serif;
-    text-decoration: underline;
-    margin: 16px auto;
-}
-main p
-{
-    font-family: 'Lemonada', cursive;
-    font-size: 80%;
-}
 
-/* first content box  */
-.content1
-{
-    background: rgb(99,56,244);
-    background: linear-gradient(180deg, rgba(99,56,244,0.9115592037596288) 0%, rgba(107,198,44,0.8919513606223739) 100%, rgba(79,190,164,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);
-    grid-area: content1;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif ;
-    border-radius: 10px;
-    padding: 10px;
-}
-.content1 img
-{
-    width: 240px;
-    margin: 30px 0 0 0;
-}
-.content1 a
-{
-    text-decoration: none;
-    
-}
-
-/*  second content box */
-.content2
+/* content boxes */
+.content
 {
     background: rgb(101,111,214);
     background: linear-gradient(180deg, rgba(101,111,214,1) 0%, rgba(44,198,92,1) 100%, rgba(79,190,164,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);
-    grid-area: content2;
-    border-radius: 10px;
+    border-radius: 0px;
     padding: 10px;
     text-align: center;
     font-family: 'Montserrat', sans-serif ;
 }
-.content2 img
+.content img
 {
     width: 120px;
     margin: 30px 0 0 0;
 }
-.content2 a
+.content a
 {
     text-decoration: none;   
 }
-
-
-/*  third content box */
-.content3
+/* detailed boxes */
+.empty_content
 {
-    background: rgb(101,170,214);
-    background: linear-gradient(180deg, rgba(101,170,214,1) 0%, rgba(104,203,135,1) 100%, rgba(79,190,164,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);
-    grid-area: content3;
-    border-radius: 10px;
-    padding: 10px;
+    display: none;
 }
+
 
 
 /*  footer */
 footer
 {
+    width: 100%;
+    height: 100px;
     background-color: rgba(75, 75, 120, 0.7);
     grid-area: footer;
     padding: 10px;
@@ -211,12 +203,4 @@ footer
 footer .copyright
 {
     font-family: monospace;
-}
-footer 
-
-/* media queries  */
-@media only screen and (max-width: 760px){
-    .mediaquery-760px{
-        display: flex;
-    }
 }
