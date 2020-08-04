@@ -26,10 +26,28 @@ header nav
 {
     height: 100%;
 }
+.bigscreen_logo
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 0 0 2%;
+    width: 100px;
+    height: 50px;
+    padding: 25px 0;
+}
+.bigscreen_logo img
+{
+    width: 100px;
+}
 .logo
 {
-    float: left;
-    margin: 10px 0 0 6%;
+    display: block;
+    width: 50%;
+    height: 80px;
+    padding: 10px 0;
+    margin: 0 0 0 130px;
 }
 header nav h2
 {
@@ -55,7 +73,7 @@ header nav ul
 {
     float: right;
     padding: 40px 0;
-    margin: 0 3% 0 0;
+    margin: -100px 3% 0 0;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 
@@ -67,8 +85,9 @@ header nav ul li
     margin: 8px;
     
 }
-header nav ul li a
+header nav ul li a, header nav ul li a:visited
 {
+    color: rgb(36, 57, 177);
     text-decoration: none;
 }
 header nav ul li a:hover
@@ -168,40 +187,38 @@ main p
 /* content boxes */
 .content1
 {
+    flex-basis: 50%;
     background: rgb(101,111,214);
     background: linear-gradient(180deg, rgba(101,111,214,1) 0%, rgba(44,198,92,1) 100%, rgba(79,190,164,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);
-    border-radius: 0px;
-    padding: 10px;
     text-align: center;
     font-family: 'Montserrat', sans-serif ;
+    text-transform: uppercase;
+    text-decoration: none;
 }
-.content1 img
+.content1 i
 {
-    width: 120px;
-    margin: 30px 0 0 0;
+    color: rgb(255, 198, 13);
+    font-size: 3em;
+    margin-top: 20px;
 }
-.content1 a
-{
-    text-decoration: none;   
-}
+
 
 .content2
 {
+    flex-basis: 49%;
     background: rgb(101,111,214);
     background: linear-gradient(180deg, rgba(101,111,214,1) 0%, rgba(44,198,92,1) 100%, rgba(79,190,164,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);
-    border-radius: 0px;
-    padding: 10px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif ;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;  
 }
-.content2 img
+.content2 i
 {
-    width: 120px;
-    margin: 30px 0 0 0;
-}
-.content2 a
-{
-    text-decoration: none;   
+    color: rgb(179, 255, 103);
+    font-size: 3em;
+    margin-top: 20px;
+
 }
 
 
@@ -209,17 +226,64 @@ main p
 /*  footer */
 footer
 {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     position: relative;
     left: 0;
     bottom: 0;
-    width: 100%;
     background-color: rgba(75, 75, 120, 0.7);
+}
+.subfooter1
+{
+    width: 45%;
+    text-align: right;
+}
+.subfooter1 p, .subfooter2 p
+{
+    font-size: 14px;
+    font-family: 'Lemonada', cursive;
+    font-weight: 800;
+}
+.subfooter1 p
+{
+    color: lavenderblush;
+}
+.subfooter2 p
+{
+    color: lawngreen;
+}
+.subfooter1 ul
+{
+    list-style: none;
+}
+.subfooter1 ul li
+{
+    display: inline;
+    margin: 0 10px;
     padding: 10px;
 }
-footer .copyright
+.subfooter1 ul li i
 {
-    font-family: monospace;
+    color: lavenderblush;
 }
-
-    
+.devider
+{
+    display: block;
+    width: 3%;
+    height: 80%;
+}
+.subfooter2
+{
+    width: 45%;
+}
+.copyright
+{
+    width: 100%;
+    text-align: center;
+}
+.copyright p, .copyright a, .copyright a:visited
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
