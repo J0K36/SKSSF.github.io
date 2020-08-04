@@ -91,7 +91,7 @@ header nav ul li a:hover
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 300px 200px 200px;
+    grid-template-rows: 300px 75.0px 75.0px;
     grid-template-areas: 
         'main main main sidebar'
         'contents contents contents sidebar'
@@ -161,6 +161,8 @@ main p
 .child_contents
 {
     grid-area: contents;
+    display: flex;
+    justify-content: space-around;
 }
 
 /* content boxes */
@@ -219,3 +221,5 @@ footer .copyright
 {
     font-family: monospace;
 }
+
+    
