@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@500&family=Montserrat:wght@800&family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+/*
+font-family: 'Lemonada', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Rubik Mono One', sans-serif;
+*/
+
+
+/* styles for contact page */
+.contact_wrapper
+{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.contact_intro
+{
+    flex-basis: 25%;
+    display: block;
+    text-align: right;
+}
+.contact_intro h2
+{
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.contact_intro p
+{
+    font-family: 'Lemonada', cursive;
+    font-size: 12px;
+}
+.contact_container
+{
+    flex-basis: 73%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.profiles
+{
+    flex-basis: 22%;
+    margin: 20px auto;
+    text-align: center;
+}
+.profiles img
+{
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 6px auto;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.profiles h3
+{
+    font-family: 'Lemonada', cursive;
+    line-height: 30px;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 0 auto;
+}
+.profiles h4
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+.profiles p
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    margin: 0 0 6px 0;
+}
+.profiles p::before
+{
+    content: 'Ph: ';
+    font-size: 8px;
+}
+
+
+@media screen and (max-width: 1080px) {
+    .profiles {
+    flex-basis: 30%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .contact_intro {
+    flex-basis: 100%;
+    text-align: center;
+    }
+    .contact_container {
+    flex-basis: 100%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .contact_intro {
+        flex-basis: 100%;
+        text-align: center;
+    }
+        .contact_container {
+        flex-basis: 100%;
+    }
+    .profiles {
+        flex-basis: 45%;
+    }
+}
+
