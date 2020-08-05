@@ -152,7 +152,7 @@ main h3
 main h1
 {
     text-transform: uppercase;
-    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     line-height: 40px;
     margin: 0 0 16px 0;
@@ -160,7 +160,7 @@ main h1
 main p
 {
     font-family: 'Lemonada', cursive;
-    font-size: 80%;
+    font-size: 20px;
 }
 
 
@@ -185,7 +185,7 @@ main p
 .sidebar p
 {
     font-family: 'Lemonada', cursive;
-    font-size: 70%;
+    font-size: 20px;
 }
 
 .child_contents
