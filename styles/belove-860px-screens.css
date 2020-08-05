@@ -235,17 +235,18 @@ footer
 }
 .subfooter1 p, .subfooter2 p
 {
-    font-size: 8px;
+    font-size: 6px;
     font-family: 'Lemonada', cursive;
     font-weight: 800;
 }
 .subfooter1 p
 {
+    margin-top: 16px;
     color: lavenderblush;
 }
 .subfooter2 p
 {
-    color: lawngreen;
+    color: rgb(255, 255, 255);
 }
 .subfooter1 ul
 {
