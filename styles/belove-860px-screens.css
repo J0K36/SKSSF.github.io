@@ -152,8 +152,8 @@ main h3
 }
 main h1
 {
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-family: 'Rubik Mono One', sans-serif;
     text-decoration: none;
     line-height: 40px;
     margin: 0 0 16px 0;
