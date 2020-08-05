@@ -135,12 +135,9 @@ header nav ul
 main
 {
     flex-basis: 60%;
-    background: rgb(72,103,163);
-    background: linear-gradient(162deg, rgba(5,65,150,1) 0%, rgba(141,141,170,1) 43%, rgba(201,246,255,1) 100%);
     border-radius: 8px;
     margin: 1px auto;
     text-align: center;
-    color: white;
 }
 main h3
 {
