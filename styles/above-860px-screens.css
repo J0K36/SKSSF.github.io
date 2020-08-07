@@ -119,6 +119,122 @@ header nav ul li a:hover
 
 
 
+            /* wrapper */
+            .wrapper
+            {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 300px 75.0px 75.0px;
+                grid-template-areas: 
+                    'main main main sidebar'
+                    'contents contents contents sidebar'
+                    'contents contents contents sidebar';
+                grid-gap: 8px;
+                margin: 6px 5px;
+            }
+
+
+            /*  main */
+            main
+            {
+                background: rgb(72,103,163);
+                background: linear-gradient(162deg, rgba(5,65,150,1) 0%, rgba(141,141,170,1) 43%, rgba(201,246,255,1) 100%);
+                grid-area: main;
+                border-radius: 10px;
+                padding: 10px;
+                text-align: center;
+                color: white;
+
+            }
+            main h3
+            {
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                margin: 16px 0 0 0;
+            }
+            main h1
+            {
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                text-decoration: none;
+                margin: 0 0 16px 0;
+            }
+            main p
+            {
+                font-family: 'Lemonada', cursive;
+                font-size: 14px;
+            }
+
+
+
+            /* side bar  */
+            .sidebar
+            {
+                background: rgb(11,11,11);
+                background: linear-gradient(45deg, rgba(11,11,11,0) 0%, rgba(0,0,0,0) 43%, rgba(5,65,150,1) 100%);
+                grid-area: sidebar;
+                padding: 10px;
+                border-top-left-radius: 8px;
+                text-align: right;
+            }
+            .sidebar h2
+            {
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                color: white;
+                margin-top: 5%;
+            }
+            .sidebar p
+            {
+                font-family: 'Lemonada', cursive;
+                font-size: 14px;
+            }
+
+            .child_contents
+            {
+                grid-area: contents;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            /* content boxes */
+            .content1
+            {
+                flex-basis: 50%;
+                background: rgb(101,111,214);
+                background: linear-gradient(180deg, rgba(101,111,214,1) 0%, rgba(44,198,92,1) 100%, rgba(79,190,164,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);
+                text-align: center;
+                font-family: 'Montserrat', sans-serif ;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+            .content1 i
+            {
+                color: rgb(255, 198, 13);
+                font-size: 3em;
+                margin-top: 20px;
+            }
+
+
+            .content2
+            {
+                flex-basis: 49%;
+                background: rgb(101,111,214);
+                background: linear-gradient(180deg, rgba(101,111,214,1) 0%, rgba(44,198,92,1) 100%, rgba(79,190,164,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                text-transform: uppercase;
+                text-decoration: none;  
+            }
+            .content2 i
+            {
+                color: rgb(179, 255, 103);
+                font-size: 3em;
+                margin-top: 20px;
+
+            }
+
+
 
 
 /*  footer */

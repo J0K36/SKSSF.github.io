@@ -122,6 +122,102 @@ header nav ul
 }
 
 
+    
+
+            /* content */
+            .wrapper
+            {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                margin: 2px 2px;
+            }
+
+
+            main
+            {
+                flex-basis: 60%;
+                border-radius: 8px;
+                margin: 1px auto;
+                text-align: center;
+            }
+            main h3
+            {
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                padding-top: 16px;
+                letter-spacing: 4px;
+                font-weight: 300;
+            }
+            main h1
+            {
+                font-family: 'Montserrat', sans-serif;
+                text-transform: uppercase;
+                text-decoration: none;
+                line-height: 40px;
+                margin: 0 0 16px 0;
+            }
+            main p
+            {
+                font-family: 'Lemonada', cursive;
+                font-size: 80%;
+            }
+
+
+
+            .sidebar
+            {
+                flex-basis: 39%;
+                background: linear-gradient(135deg, rgb(120, 171, 241) 10%, rgb(119, 216, 255) 50%);
+                text-align: center;
+                margin: 1px auto;
+                border-radius: 8px;
+            }
+            .sidebar h2
+            {
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                color: white;
+                padding-top: 5px;
+            }
+            .sidebar p
+            {
+                font-family: 'Lemonada', cursive;
+                font-size: 80%;
+                color: white;
+            }
+
+
+            /* contents */
+            .child_contents
+            {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .content1, .content2
+            {
+                height: 20vh;
+                flex-basis: 48%;
+                background: rgb(101,111,214);
+                background: linear-gradient(180deg, rgba(101,111,214,1) 0%, rgba(44,198,92,1) 100%, rgba(79,190,164,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);
+                margin: 6px auto;
+                border-radius: 6px;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                text-transform: uppercase;
+                text-decoration: none;   
+            }
+            .content1 i, .content2 i
+            {
+                color: rgb(255, 255, 255);
+                font-size: 2em;
+                margin: 12px 0 6px 0;
+            }
+
+
+
 
 /*  footer */
 footer
