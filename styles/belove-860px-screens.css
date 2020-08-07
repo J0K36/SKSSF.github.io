@@ -141,7 +141,10 @@ header nav ul
                 margin: 1px auto;
                 text-align: center;
             }
-            main h3
+
+
+
+    /*      main .thall h3
             {
                 text-transform: uppercase;
                 font-family: 'Montserrat', sans-serif;
@@ -149,7 +152,7 @@ header nav ul
                 letter-spacing: 4px;
                 font-weight: 300;
             }
-            main h1
+            main .thall h1
             {
                 font-family: 'Montserrat', sans-serif;
                 text-transform: uppercase;
@@ -157,12 +160,12 @@ header nav ul
                 line-height: 40px;
                 margin: 0 0 16px 0;
             }
-            main p
+            main .thall p
             {
                 font-family: 'Lemonada', cursive;
                 font-size: 80%;
             }
-
+    */
 
 
             .sidebar

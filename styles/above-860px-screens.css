@@ -144,27 +144,30 @@ header nav ul li a:hover
                 padding: 10px;
                 text-align: center;
                 color: white;
-
             }
-            main h3
+
+
+
+    /*
+            main .thall h3
             {
                 text-transform: uppercase;
                 font-family: 'Montserrat', sans-serif;
                 margin: 16px 0 0 0;
             }
-            main h1
+            main .thall h1
             {
                 text-transform: uppercase;
                 font-family: 'Montserrat', sans-serif;
                 text-decoration: none;
                 margin: 0 0 16px 0;
             }
-            main p
+            main .thall p
             {
                 font-family: 'Lemonada', cursive;
                 font-size: 14px;
             }
-
+    */
 
 
             /* side bar  */
