@@ -227,8 +227,8 @@ header nav ul
 /*  footer */
 footer
 {
-    width: 80%;
-    padding: 0 10%;
+    width: 90%;
+    padding: 0 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
