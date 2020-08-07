@@ -183,6 +183,8 @@ header nav ul
             .sidebar p
             {
                 font-family: 'Lemonada', cursive;
+                width: 90%;
+                margin: 0 5%;
                 font-size: 80%;
                 color: white;
             }
@@ -239,13 +241,13 @@ footer
 }
 .subfooter1 p, .subfooter2 p
 {
-    font-size: 6px;
+    font-size: 8px;
     font-family: 'Lemonada', cursive;
     font-weight: 800;
 }
 .subfooter1 p
 {
-    margin-top: 16px;
+    margin-top: 16px 0;
     color: lavenderblush;
 }
 .subfooter2 p
