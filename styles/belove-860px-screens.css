@@ -77,7 +77,7 @@ header nav ul
 {
     display: block;
     text-align: center;
-    height: 300vh;
+    height: 150vh;
     transition: .5s;
     background-color: rgb(150, 60, 200, .65);
 }
