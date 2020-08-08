@@ -127,8 +127,6 @@ header nav ul
             /* content */
             .wrapper
             {
-                display: flex;
-                flex-wrap: wrap;
                 width: 100%;
                 margin: 2px 2px;
             }
@@ -136,7 +134,7 @@ header nav ul
 
             main
             {
-                flex-basis: 60%;
+                width: 100%;
                 border-radius: 8px;
                 margin: 1px auto;
                 text-align: center;
@@ -145,10 +143,10 @@ header nav ul
 
             .sidebar
             {
-                flex-basis: 38%;
+                width: 98%;
                 background: linear-gradient(135deg, rgb(120, 171, 241) 10%, rgb(119, 216, 255) 50%);
                 text-align: center;
-                margin: 1px auto;
+                margin: 1px 1%;
                 border-radius: 8px;
             }
             .sidebar h2
