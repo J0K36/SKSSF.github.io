@@ -136,8 +136,6 @@ header nav ul li a:hover
             /*  main */
             main
             {
-                background: rgb(72,103,163);
-                background: linear-gradient(162deg, rgba(5,65,150,1) 0%, rgba(141,141,170,1) 43%, rgba(201,246,255,1) 100%);
                 grid-area: main;
                 border-radius: 10px;
                 padding: 10px;
