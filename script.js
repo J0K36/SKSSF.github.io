@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 
 
-var slideIndex = 1;
+var slideIndex = 2;
 showSlides(slideIndex);
 
 // Next/previous controls
